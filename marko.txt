@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Summer Perfumes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f4ef;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        .product-card {
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        }
+        .product-img {
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s;
+        }
+        .product-img:hover {
+            transform: scale(1.02);
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+        }
+        .quote {
+            font-style: italic;
+            color: #555;
+            margin-top: 30px;
+            padding: 10px 30px;
+            background-color: #f1f1f1;
+            border-left: 5px solid #f39c12;
+        }
+        .quote-author {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="overlay max-w-6xl text-center">
+        <h1 class="text-6xl font-bold mb-10 text-gray-800">✨ Popular Summer Perfumes ✨</h1>
+        <p class="text-xl text-gray-700 mb-10">Ignite your senses with fragrances that will inspire you this summer.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+            <div class="product-card bg-white rounded-2xl p-6">
+                <img src="https://source.unsplash.com/featured/?citrus-perfume,art" alt="Citrus Perfume" class="product-img mb-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Citrus Perfume</h2>
+                <p class="text-gray-600">Fresh, energetic, and perfect for hot summer days.</p>
+                <button class="mt-4 bg-gray-800 text-white rounded-xl py-2 px-4 hover:bg-gray-900">Learn More</button>
+            </div>
+            <div class="product-card bg-white rounded-2xl p-6">
+                <img src="https://source.unsplash.com/featured/?ocean-perfume,art" alt="Ocean Perfume" class="product-img mb-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Ocean Perfume</h2>
+                <p class="text-gray-600">A freshness that transports you to the beach with a sea breeze scent.</p>
+                <button class="mt-4 bg-gray-800 text-white rounded-xl py-2 px-4 hover:bg-gray-900">Learn More</button>
+            </div>
+            <div class="product-card bg-white rounded-2xl p-6">
+                <img src="https://source.unsplash.com/featured/?fruity-perfume,art" alt="Fruity Perfume" class="product-img mb-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Fruity Perfume</h2>
+                <p class="text-gray-600">Sweet and tropical notes that celebrate summer energy.</p>
+                <button class="mt-4 bg-gray-800 text-white rounded-xl py-2 px-4 hover:bg-gray-900">Learn More</button>
+            </div>
+            <div class="product-card bg-white rounded-2xl p-6">
+                <img src="https://source.unsplash.com/featured/?floral-perfume,art" alt="Floral Perfume" class="product-img mb-6">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Floral Perfume</h2>
+                <p class="text-gray-600">Romantic floral notes that awaken the freshness of spring.</p>
+                <button class="mt-4 bg-gray-800 text-white rounded-xl py-2 px-4 hover:bg-gray-900">Learn More</button>
+            </div>
+        </div>
+        <div class="quote">
+            <p>"Perfume is not just something you wear, it is the feeling you express."</p>
+            <p class="quote-author">– Anonymous</p>
+        </div>
+        <p class="text-gray-600 mb-10 mt-6">Follow us for more news and exclusive offers:</p>
+        <div class="flex gap-6 justify-center mb-10">
+            <a href="#" class="text-gray-800 hover:text-gray-500">Instagram</a>
+            <a href="#" class="text-gray-800 hover:text-gray-500">Vinted</a>
+            <a href="#" class="text-gray-800 hover:text-gray-500">Facebook</a>
+        </div>
+    </div>
+</body>
+</html>
